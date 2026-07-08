@@ -15,7 +15,7 @@ from datetime import datetime
 
 # Configuration
 CDP_DIR = os.path.expanduser("~/.agents/skills/chrome-cdp")
-CLEANER = os.path.expanduser("~/.Documents/company_code/ai-papers/.claude/skills/io-gf-fetch/scripts/clean_article.py")
+CLEANER = os.path.expanduser("~/Documents/company_code/ai-papers/.claude/skills/io-gf-fetch/scripts/clean_article.py")
 ARTICLES_JSON = "/tmp/articles.json"
 TAB_ID = "6C10CC6E"  # 前沿研读 tab
 
@@ -64,7 +64,7 @@ def fetch_article(article):
     try:
         # 1. Navigate to article
         cdp("nav", TAB_ID, article["href"])
-        time.sleep(3)
+        time.sleep(5)  # Increased wait for dynamic content
 
         # 2. Get metadata
         meta_json = cdp("eval", TAB_ID,
@@ -78,7 +78,7 @@ def fetch_article(article):
         # 3. Get article content
         html = cdp("html", TAB_ID, ".prose")
         if not html:
-            print(f"[WARN] Empty content for {article['href']}")
+            print(f"[WARN] Empty HTML for {article['href']}")
             return False
 
         # 4. Clean HTML to markdown
@@ -105,12 +105,6 @@ def fetch_article(article):
     except Exception as e:
         print(f"[ERROR] Failed to fetch {article['href']}: {e}")
         return False
-    finally:
-        # 6. Go back home
-        try:
-            cdp("nav", TAB_ID, "http://io.gf.com.cn/")
-        except:
-            pass
 
 
 def main():
