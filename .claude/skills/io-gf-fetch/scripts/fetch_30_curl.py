@@ -27,14 +27,6 @@ def fetch_article(article):
         return False
 
     date = article["date"].replace("-", "")
-    title = re.sub(r'[⭐★½\s]+', '', article.get("title", "")).strip()[:80]
-    title = re.sub(r'[<>:"/\\|?*]', '_', title)
-    fname = f"{date}_{title}.md"
-    fpath = os.path.join(folder, fname)
-
-    if os.path.exists(fpath):
-        print(f"[SKIP] Already exists: {fname}")
-        return False
 
     print(f"[FETCH] {article['date']} | {topic} | {article.get('title', '')[:60]}")
 
@@ -52,7 +44,21 @@ def fetch_article(article):
             print(f"[WARN] Empty/short HTML for {article['href']}")
             return False
 
-        # 2. Extract .prose content using Python
+        title_match = re.search(r'<h1 class="article-title"[^>]*>(.*?)</h1>', html, re.DOTALL)
+        if title_match:
+            title = re.sub(r'<[^>]+>', '', title_match.group(1)).strip()
+        else:
+            title = article.get("title", "Untitled")
+
+        title_safe = re.sub(r'[⭐★½\s]+', '', title).strip()[:80]
+        title_safe = re.sub(r'[<>:"/\\|?*]', '_', title_safe)
+        fname = f"{date}_{title_safe}.md"
+        fpath = os.path.join(folder, fname)
+
+        if os.path.exists(fpath):
+            print(f"[SKIP] Already exists: {fname}")
+            return False
+
         prose_match = re.search(r'<div class="prose" [^>]*>(.*?)</div>\s*<nav', html, re.DOTALL)
         if not prose_match:
             prose_match = re.search(r'<div class="prose" [^>]*>(.*?)</div>\s*</div>\s*</article>', html, re.DOTALL)
@@ -63,7 +69,6 @@ def fetch_article(article):
 
         prose_html = prose_match.group(1)
 
-        # 3. Clean HTML to markdown
         result = subprocess.run(
             ["python3", CLEANER],
             input=prose_html,
@@ -76,14 +81,6 @@ def fetch_article(article):
             print(f"[WARN] Empty cleaned content for {article['href']}")
             return False
 
-        # 4. Get title from HTML
-        title_match = re.search(r'<h1 class="article-title"[^>]*>(.*?)</h1>', html, re.DOTALL)
-        if title_match:
-            title = re.sub(r'<[^>]+>', '', title_match.group(1)).strip()
-        else:
-            title = article.get("title", title)
-
-        # 5. Save to file
         md = f"# {title}\n\n**日期**: {article['date']}\n\n---\n\n{body}"
         with open(fpath, "w", encoding="utf-8") as f:
             f.write(md)
