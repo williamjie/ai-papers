@@ -17,7 +17,10 @@ MIN_LINES = 15
 MAX_LINES = 150
 
 
-def validate_file(filepath: str) -> tuple[bool, str]:
+from typing import Tuple
+
+
+def validate_file(filepath: str) -> Tuple[bool, str]:
     """Returns (is_clean, reason_if_dirty)."""
     if not os.path.exists(filepath):
         return False, "MISSING"
