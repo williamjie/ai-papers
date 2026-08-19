@@ -1,2 +1,7 @@
 # Fetch scripts
 .claude/skills/io-gf-fetch/scripts/fetch_batch*.py
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/

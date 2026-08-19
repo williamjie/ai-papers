@@ -1,0 +1,81 @@
+Loaded 20 pending articles, 0 already done
+[FETCH] 2026-08-05 | AI | ⭐⭐⭐½ 告别对齐税：MemSFT 外挂记忆微调法
+[OK] Saved: 20260805_告别对齐税：MemSFT外挂记忆微调法.md
+[PROGRESS] 1/20 fetched=1 failed=0
+[WAIT] Next in 30s...
+[FETCH] 2026-08-05 | AI | ⭐⭐⭐ Agent 代码解释的自动评测基准 ExplainBench
+[OK] Saved: 20260805_Agent代码解释的自动评测基准ExplainBench.md
+[PROGRESS] 2/20 fetched=2 failed=0
+[WAIT] Next in 30s...
+[FETCH] 2026-08-05 | AI | ⭐⭐½ 电商Agent的长期一致性难题：MerchantBench深度解析
+[OK] Saved: 20260805_电商Agent的长期一致性难题：MerchantBench深度解析.md
+[PROGRESS] 3/20 fetched=3 failed=0
+[WAIT] Next in 30s...
+[FETCH] 2026-08-05 | AI | ⭐⭐⭐ Agent自进化实战：流式任务下的陷阱与选型指南
+[OK] Saved: 20260805_Agent自进化实战：流式任务下的陷阱与选型指南.md
+[PROGRESS] 4/20 fetched=4 failed=0
+[WAIT] Next in 30s...
+[FETCH] 2026-08-05 | AI | ⭐⭐⭐½ Agent RL新解：用局部一致性过滤教师噪声
+[OK] Saved: 20260805_AgentRL新解：用局部一致性过滤教师噪声.md
+[PROGRESS] 5/20 fetched=5 failed=0
+[WAIT] Next in 30s...
+[FETCH] 2026-08-05 | AI | ⭐⭐⭐⭐ GROVE：让AI助手记住流水账，还能主动提醒
+[OK] Saved: 20260805_GROVE：让AI助手记住流水账，还能主动提醒.md
+[PROGRESS] 6/20 fetched=6 failed=0
+[WAIT] Next in 30s...
+[FETCH] 2026-08-05 | AI | ⭐⭐⭐½ 别只看 BLEU：解耦图文描述质量的双维评估
+[OK] Saved: 20260805_别只看BLEU：解耦图文描述质量的双维评估.md
+[PROGRESS] 7/20 fetched=7 failed=0
+[WAIT] Next in 30s...
+[FETCH] 2026-08-05 | AI | ⭐⭐⭐ 扩散语言模型新解：AURORA-LM的连续潜空间设计
+[OK] Saved: 20260805_扩散语言模型新解：AURORA-LM的连续潜空间设计.md
+[PROGRESS] 8/20 fetched=8 failed=0
+[WAIT] Next in 30s...
+[FETCH] 2026-08-05 | AI | ⭐⭐⭐½ 腾讯混元Buffalo：统一3D生成与编辑的大模型范式
+[OK] Saved: 20260805_腾讯混元Buffalo：统一3D生成与编辑的大模型范式.md
+[PROGRESS] 9/20 fetched=9 failed=0
+[WAIT] Next in 30s...
+[FETCH] 2026-08-05 | AI | ⭐⭐⭐½ 世界模型新范式：从预测到代理交互
+[OK] Saved: 20260805_世界模型新范式：从预测到代理交互.md
+[PROGRESS] 10/20 fetched=10 failed=0
+[WAIT] Next in 30s...
+[FETCH] 2026-08-05 | AI | ⭐⭐⭐½ Shopee流式推荐新解：知识几何解耦
+[OK] Saved: 20260805_Shopee流式推荐新解：知识几何解耦.md
+[PROGRESS] 11/20 fetched=11 failed=0
+[WAIT] Next in 30s...
+[FETCH] 2026-08-05 | AI | ⭐⭐⭐½ 跨模型蒸馏：Any-OPD让SD3.5学会FLUX的画风
+[OK] Saved: 20260805_跨模型蒸馏：Any-OPD让SD3.5学会FLUX的画风.md
+[PROGRESS] 12/20 fetched=12 failed=0
+[WAIT] Next in 30s...
+[FETCH] 2026-08-05 | AI | ⭐⭐ 扩散大模型MoE缩放律：LLaDA v2的工程启示
+[OK] Saved: 20260805_扩散大模型MoE缩放律：LLaDAv2的工程启示.md
+[PROGRESS] 13/20 fetched=13 failed=0
+[WAIT] Next in 30s...
+[FETCH] 2026-08-05 | AI | ⭐⭐⭐½ Agent技能库的“特洛伊木马”：SkillJack攻击深度解析
+[OK] Saved: 20260805_Agent技能库的“特洛伊木马”：SkillJack攻击深度解析.md
+[PROGRESS] 14/20 fetched=14 failed=0
+[WAIT] Next in 30s...
+[FETCH] 2026-08-05 | AI | ⭐⭐⭐½ OmniPack：多模态大模型推理加速新范式
+[OK] Saved: 20260805_OmniPack：多模态大模型推理加速新范式.md
+[PROGRESS] 15/20 fetched=15 failed=0
+[WAIT] Next in 30s...
+[FETCH] 2026-08-05 | AI | ⭐⭐⭐½ 告别像素修补：UniWorld-Design 的图层原生生成范式
+[OK] Saved: 20260805_告别像素修补：UniWorld-Design的图层原生生成范式.md
+[PROGRESS] 16/20 fetched=16 failed=0
+[WAIT] Next in 30s...
+[FETCH] 2026-08-05 | AI | ⭐⭐⭐½ 实时视频编辑：JoyAI如何用16B模型跑满30FPS
+[OK] Saved: 20260805_实时视频编辑：JoyAI如何用16B模型跑满30FPS.md
+[PROGRESS] 17/20 fetched=17 failed=0
+[WAIT] Next in 30s...
+[FETCH] 2026-08-05 | AI | ⭐⭐⭐½ 视频深度研究：打破模态偏见的新范式
+[OK] Saved: 20260805_视频深度研究：打破模态偏见的新范式.md
+[PROGRESS] 18/20 fetched=18 failed=0
+[WAIT] Next in 30s...
+[FETCH] 2026-08-05 | AI | ⭐⭐⭐ 个人Agent如何“进化”：PAST-Bench深度拆解
+[OK] Saved: 20260805_个人Agent如何“进化”：PAST-Bench深度拆解.md
+[PROGRESS] 19/20 fetched=19 failed=0
+[WAIT] Next in 30s...
+[FETCH] 2026-08-05 | AI | ⭐⭐½ TurnSight：Agent工具调用的精准信用分配术
+[OK] Saved: 20260805_TurnSight：Agent工具调用的精准信用分配术.md
+[PROGRESS] 20/20 fetched=20 failed=0
+[DONE] fetched=20 failed=0 skipped_already=0
